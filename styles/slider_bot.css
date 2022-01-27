@@ -1,0 +1,37 @@
+#references-slider{
+    width: calc(100% - 56px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8px 28px 40px;
+}
+    #images-area-bot{
+        width: calc(100% - 121px);
+        max-width: 749px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+        #arrow-left-bot{
+            margin-right: 49.5px;
+        }
+        #arrow-right-bot{
+            margin-left: 49.5px;
+        }
+        #images-area-bot > div{
+            width: 107px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            #images-area-bot > div > img{
+                width: auto;
+                height: auto;
+                margin: auto;
+            }

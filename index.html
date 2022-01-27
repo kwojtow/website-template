@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROBOTICS</title>
+    <link link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link link rel="stylesheet" type="text/css" href="styles/menu.css" />
+    <link link rel="stylesheet" type="text/css" href="styles/form.css" />
+    <link link rel="stylesheet" type="text/css" href="styles/slider_top.css" />
+    <link link rel="stylesheet" type="text/css" href="styles/slider_bot.css" />
+
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="scripts/articles.js"></script>
+    <script type="text/javascript" src="scripts/info.js"></script>
+    <script type="text/javascript" src="scripts/languages.js"></script>
+    <script type="text/javascript" src="scripts/slider_top.js"></script>
+    <script type="text/javascript" src="scripts/slider_bot.js"></script>
+    <script type="text/javascript" src="scripts/fonts.js"></script>
+    <script type="text/javascript" src="scripts/menu.js"></script>
+
+</head>
+
+<body>
+    <div id="box">
+        <div id="top-bar">
+            <header>
+                <div id="logo">
+                    <img src="images/logo.png" />
+                </div>
+                <div id="languages">
+                    <img src="images/flagi/pl-gray.png" onmouseover="changeFlagImg(this) " onmouseout="changeFlagImgBack(this)" />
+                    <img src="images/flagi/de-gray.png" onmouseover="changeFlagImg(this) " onmouseout="changeFlagImgBack(this)" />
+                    <img src="images/flagi/gb-gray.png" onmouseover="changeFlagImg(this) " onmouseout="changeFlagImgBack(this)" />
+                </div>
+            </header>
+            <div id="menu-fonts">
+                <nav>
+                    <ul class="lvl-1">
+                        <li>
+                            <a href="#">
+                                <span class="pointer">&bull; </span>O nas</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="pointer">&bull; </span>Oferta</a>
+                            <ul class="lvl-2">
+                                <li>
+                                    <a href="#">
+                                        <span class="pointer">&bull; </span>Roboty przemysłowe</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="pointer">&bull; </span>Roboty domowe</a>
+                                    <ul class="lvl-3">
+                                        <li>
+                                            <a href="#">
+                                                <span class="pointer">&bull; </span>SGY 3562 p89</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="pointer">&bull; </span>MAGERUS 189 Petro</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="pointer">&bull; </span>Softix 678N-289J</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="pointer">&bull; </span>Zerton 74940-100b</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="pointer">&bull; </span>Maszyny zdalne</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="pointer">&bull; </span>Produkty koncepcyjne</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="pointer">&bull; </span>Aktualności</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="pointer">&bull; </span>Publikacje</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="pointer">&bull; </span>Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="menu-row">
+                    <button id="menu-button">
+                        <img src="images/menu-icon.png" />
+                    </button>
+                    <div id="font-sizes">
+                        <span id="small-font">A</span>
+                        <span id="medium-font">A</span>
+                        <span id="big-font">A</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slider-box">
+            <div id="slider">
+                <div id="image-area">
+                    <img id="img-1" src="" />
+                    <img id="img-2" src="" />
+                    <img id="img-3" src="" />
+                    <img id="img-4" src="" />
+                </div>
+                <div id="arrow-left">
+                    <img src="" />
+                </div>
+                <div id="arrow-right">
+                    <img src="" />
+                </div>
+            </div>
+            <img id="robot" src="images/robot-big.png" />
+            <div id="slider-desc">
+                <h1>Sztuczna</h1>
+                <h2>Inteligencja</h2>
+                <p>Suspendisse rutrum rhoncus metus nec ornare. Vestibulum ac ligula nisl. Vestibulum ulamcorper vestibulum
+                    ligula, ut bibendum est dictum at. Integer sit amet nisl urna...
+                    <span class="more">&#9658;</span>
+                </p>
+            </div>
+        </div>
+        <div id="column-box">
+            <div id="articles">
+                <h2>Aktualności</h2>
+                <div id="article-1" class="article">
+                    <span class="date">2018-07-05</span>
+                    <p class="intro">Suspendisse rutrum rhoncus metus nec ornare. Vestibulum ac ligula nisl. Vestibulum ulamcorper vestibulum
+                        ligula...
+                    </p>
+                    <p class="full">Lorem ipsum dolor sit amet augue a nunc. Ut sodales, velit pretium eget, velit. Integer ac ligula non
+                        placerat vestibulum. Pellentesque felis. Curabitur vitae felis in ornare enim consectetuer ut, lectus.
+                        Mauris vel nibh. Morbi urna eget sapien. In pharetra. Donec nec nibh vel tincidunt luctus. Sed placerat.
+                        Mauris urna. Duis eget massa. Duis lobortis, massa a sapien. Donec suscipit congue risus. Sed sed
+                        leo ac tortor. Mauris nec erat. Sed pulvinar turpis. Morbi sollicitudin. Donec nec augue. Praesent
+                        nec augue. Sed condimentum sit amet quam. Maecenas consequat, orci magna non dui convallis tellus.
+                        Integer at arcu. In hac habitasse platea dictumst. Proin luctus. Aenean faucibus justo. Nulla massa.
+                        Nunc mollis, purus et ultrices sapien auctor tincidunt. Nulla semper. Sed in augue sed felis vitae
+                        mauris. Nullam pharetra leo. Phasellus ornare elementum fringilla orci. Sed eget nisl. Nam laoreet
+                        venenatis nunc, fringilla fringilla purus vitae urna. Aenean gravida tempor, ligula eget metus. Aenean
+                        ac lectus. Nullam justo non felis. Integer tristique, sollicitudin lorem, malesuada fames ac odio
+                        ac turpis egestas. Praesent est id sapien. Morbi feugiat lectus sit amet, consectetuer.</p>
+                    <span class="more hidden" onclick="showArticle(this)">Rozwiń
+                        <span> &#9660;</span>
+                    </span>
+                </div>
+
+                <div id="article-2" class="article">
+                    <span class="date">2018-07-05</span>
+                    <p class="intro">Suspendisse rutrum rhoncus metus nec ornare. Vestibulum ac ligula nisl. Vestibulum ulamcorper vestibulum
+                        ligula...
+                    </p>
+                    <p class="full">Lorem ipsum dolor sit amet augue a nunc. Ut sodales, velit pretium eget, velit. Integer ac ligula non
+                        placerat vestibulum. Pellentesque felis. Curabitur vitae felis in ornare enim consectetuer ut, lectus.
+                        Mauris vel nibh. Morbi urna eget sapien. In pharetra. Donec nec nibh vel tincidunt luctus. Sed placerat.
+                        Mauris urna. Duis eget massa. Duis lobortis, massa a sapien. Donec suscipit congue risus. Sed sed
+                        leo ac tortor. Mauris nec erat. Sed pulvinar turpis. Morbi sollicitudin. Donec nec augue. Praesent
+                        nec augue. Sed condimentum sit amet quam. Maecenas consequat, orci magna non dui convallis tellus.
+                        Integer at arcu. In hac habitasse platea dictumst. Proin luctus. Aenean faucibus justo. Nulla massa.
+                        Nunc mollis, purus et ultrices sapien auctor tincidunt. Nulla semper. Sed in augue sed felis vitae
+                        mauris. Nullam pharetra leo. Phasellus ornare elementum fringilla orci. Sed eget nisl. Nam laoreet
+                        venenatis nunc, fringilla fringilla purus vitae urna. Aenean gravida tempor, ligula eget metus. Aenean
+                        ac lectus. Nullam justo non felis. Integer tristique, sollicitudin lorem, malesuada fames ac odio
+                        ac turpis egestas. Praesent est id sapien. Morbi feugiat lectus sit amet, consectetuer.</p>
+                    <span class="more hidden" onclick="showArticle(this)">Rozwiń
+                        <span> &#9660;</span>
+                    </span>
+                </div>
+
+                <button>zobacz wszystkie</button>
+            </div>
+            <div id="products">
+                <h2>Zalety Produktów</h2>
+                <div id="products-robot-box">
+                    <img src="images/robot.png" />
+                    <div id="help1" class="help">
+                        <p>Suspendisse rutrum rhoncus metus nec ornare. Vestibulum ac ligul</p>
+                        <img class="dymek" src="images/dymek.png" />
+                        <img id="info1" class="info" src="images/info.png" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" />
+                    </div>
+                    <div id="help2" class="help">
+                        <p>Suspendisse rutrum rhoncus metus nec ornare. Vestibulum ac ligul</p>
+                        <img class="dymek" src="images/dymek.png" />
+                        <img id="info2" class="info" src="images/info.png" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" />
+                    </div>
+                    <div id="help3" class="help">
+                        <p>Suspendisse rutrum rhoncus metus nec ornare. Vestibulum ac ligul</p>
+                        <img class="dymek" src="images/dymek.png" />
+                        <img id="info3" class="info" src="images/info.png" onmouseover="showInfo(this)" onmouseout="hideInfo(this)" />
+                    </div>
+                </div>
+                <button>zobacz wszystkie</button>
+            </div>
+            <div id="contact">
+                <h2>Zapytaj nas</h2>
+                <form>
+                    <input type="text" placeholder="Imię Nazwisko/Nazwa Firmy" required="true" />
+                    <input type="email" placeholder="Adres e-mail" required="true" />
+                    <input type="tel" placeholder="Telefon kontaktowy" required="true" />
+                    <div class="fieldset">
+                        <label for="product">Zapytanie o produkt</label>
+                        <input id="product" type="radio" name="ask" />
+                        <label for="project">Zapytanie o projekt</label>
+                        <input id="project" type="radio" name="ask" />
+                    </div>
+                    <select>
+                        <option>Wybierz temat wiadomości</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                    <div class="fieldset">
+                        <label for="email">Kontakt e-mail</label>
+                        <input type="checkbox" name="contact-type" id="email">
+                        <label for="phone">Kontakt telefoniczny</label>
+                        <input type="checkbox" name="contact-type" id="phone">
+                    </div>
+
+                    <input type="submit" value="wyślij zgłoszenie" />
+                </form>
+            </div>
+        </div>
+        <hr />
+        <div id="references-box">
+            <h2>Referencje</h2>
+            <div id="references-slider">
+                <div id="arrow-left-bot">
+                    <img src="images/slider_bot/arrow-left.png" />
+                </div>
+                <div id="images-area-bot">
+                    <div>
+                        <img src="images/slider_bot/1.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/2.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/3.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/4.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/1.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/2.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/3.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/4.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/1.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/2.png" />
+                    </div>
+                    <div>
+                        <img src="images/slider_bot/3.png" />
+                    </div>
+                </div>
+                <div id="arrow-right-bot">
+                    <img src="images/slider_bot/arrow-right.png" />
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer-box">
+                <div id="footer-column-box">
+                    <div id="menu-min">
+                        <h3>Przejdź do</h3>
+                        <ul>
+                            <li>
+                                <span>&#9658; </span>O nas</li>
+                            <li>
+                                <span>&#9658; </span>Oferta</li>
+                            <li>
+                                <span>&#9658; </span>Aktualności</li>
+                            <li>
+                                <span>&#9658; </span>Publikacje</li>
+                            <li>
+                                <span>&#9658; </span>Kontakt</li>
+                        </ul>
+                    </div>
+                    <div id="certificate">
+                        <h3>Certyfiakty jakości</h3>
+                        <div>
+                            <img src="images/certifications.png" />
+                        </div>
+                    </div>
+                    <div id="contact-min">
+                        <h3>Szybki kontakt</h3>
+                        <p>
+                            <span>Robotics Inc.</span>
+                            <br /> Krasnobrodzka 187/234,
+                            <br /> 21-030 Krasnolased
+                            <br /> tel. +48 81 502 99 30
+                            <br /> fax. +48 81 999 23 31
+                            <br /> e-mail: biuro@robotics.com.au
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <span>&copy;Copyright 2014 by robotics. Wszelkie prawa zastrzeżone</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

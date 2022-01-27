@@ -1,0 +1,131 @@
+nav ul, nav li, nav a{
+    display: block;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+}
+#menu-button{
+    border-radius:4px;
+    padding: 0.2em;
+    position: static;
+    display: none;
+}
+nav a{
+    height:30px;
+    background:#011993;
+    color: white;
+    font-size: 1rem;
+    line-height: 30px;
+    text-decoration: none;
+}
+.lvl-1 > li > a{
+    background: none;
+    color: #011993;
+    padding: 0 20px;
+}
+.lvl-2 > li > a{
+    width: 11.6rem;
+    padding-left: 0.92rem;
+    padding-right: 0.62rem;
+}
+.lvl-3 > li a{
+    width: 11.6rem;
+    padding-left: 0.92rem;
+    padding-right: 0.62rem;
+}
+nav a:hover{
+    background: #9f3412;
+}
+.lvl-1 > li > a:hover, .lvl-1 > li:hover > a{
+    background: #011993;
+    color: white;
+}
+.lvl-1 > li{
+    float: left;
+    position: relative;
+}
+    .lvl-2{
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 30px;
+    }
+        .lvl-2 > li{
+            position: relative;
+        }
+            .lvl-3{
+                display: none;
+                position: absolute;
+                top: 0px;
+                left: 13.14rem;
+            }
+
+
+
+/* li:hover > ul{
+    display: block;
+} */
+
+.pointer{
+    color: #9f3412;
+}
+@media screen and (max-width: 750px){
+    #top-bar{
+        flex-direction: column;
+        max-height: unset;
+    }
+    #menu-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    #menu-button{
+        display: block;
+        background-image: none;
+    }
+    .lvl-1{
+        border-radius: 4px;
+    }
+    .lvl-1 > li{
+        float: none;
+    }
+    .lvl-1 > li > a{
+        margin-left: 10%;
+        width: unset;
+        margin-right: 4px;
+        background:#011993;
+        color: white;
+    }
+   .lvl-2{
+        position: static;
+    }
+    .lvl-2 >li > a{
+        margin-left: 20%;
+        width: unset;
+        margin-right: 4px;
+    }
+    .lvl-3{
+        position: static;
+    }
+    .lvl-3 >li > a{
+        margin-left: 30%;
+        width: unset;
+        margin-right: 4px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+    nav{
+        order: 3;
+        display: none;
+        width: calc(100% - 20px);
+        margin: 0 10px;
+        border-radius: 4px;
+        background:#011993;
+    }
+    .lvl-1 a:hover{
+        background: #9f3412;
+    }
+
+}
